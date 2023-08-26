@@ -12,8 +12,12 @@ import kotlinx.coroutines.withContext
 import java.io.IOException
 
 object Repository {
-    private var neo:Neo4j=Neo4j()
+    //Python版后端
+    //private var neo:Neo4j=Neo4j()
 
+    //Java版后端
+    private var neo:Neo4j_javaServer=Neo4j_javaServer()
+    
     suspend fun test(s:String):Res<String> =try{
         withContext(Dispatchers.IO) {
             return@withContext Res.Success(neo.TEST(s).toString())

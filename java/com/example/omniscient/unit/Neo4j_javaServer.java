@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-public final class Neo4j{
+public final class Neo4j_javaServer{
     private final String URL="http://localhost:8081";
     public Neo4j(){
 

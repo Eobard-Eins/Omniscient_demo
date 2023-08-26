@@ -24,7 +24,7 @@ import java.util.Objects;
 
 public final class Neo4j_javaServer{
     private final String URL="http://localhost:8081";
-    public Neo4j(){
+    public Neo4j_javaServer(){
 
     }
     @NonNull
